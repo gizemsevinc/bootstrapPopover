@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Bootstrap Popover</title>
+        <script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
+        <script src="bootstrap-popover.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <button type="button" class="btn btn-lg btn-danger" data-toggle="popover">Click to toggle popover</button>
+        </div>
+        <script>
+            $(function() {
+                var options = {
+                    title: 'This is title',
+                    content: 'This is content',
+                    placement : 'right',
+                    trigger: 'click hover focus'
+                }
+
+                var po = new popOver(options);
+                po.show();
+            });
+        </script>
+    </body>
+</html>
+
