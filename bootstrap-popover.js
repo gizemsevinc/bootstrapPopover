@@ -9,7 +9,7 @@ PopOver.prototype.getId = function() {
 }
 
 PopOver.prototype.setId = function(id) {
-    this.id = typeof id == "undefined" ? this.makeRandomId() : id;
+    this.id = typeof id === "undefined" ? this.makeRandomId() : id;
 }
 
 PopOver.prototype.makeRandomId = function() {
@@ -24,7 +24,7 @@ PopOver.options = {
 }
 
 PopOver.prototype.getTemplate = function() {
-    return typeof this.customTemplate == "undefined" ? this.template() : this.customTemplate();
+    return typeof this.customTemplate === "undefined" ? this.template() : this.customTemplate();
 
 };
 
